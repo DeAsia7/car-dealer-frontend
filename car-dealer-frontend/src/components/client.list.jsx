@@ -4,7 +4,7 @@ export function Clientlist({ api }) {
     const [clients, setClients] = useState([]);
 
     const fetchClients =  () => {
-        api.get('/clients').then(res => ssetClients(res.data))
+        api.get('/clients').then(res => setClients(res.data))
             
 return(
         <div className="p-4">
