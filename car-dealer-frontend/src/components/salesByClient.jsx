@@ -13,7 +13,7 @@ api.get(`/sales/clients/${id}`).then(res => setSales(res.data));
     <input className="input" placeholder= "Client ID" onChange={(e) => setId(e.target.value)} />
     <button className="btn" onClick={fetchSales}>Fetch Sales</button>
 <ul>
-    {sales.map((sale, i )=> <li key={i}> Sale #{sale.id} on </li>)}
+    {sales.map((sale, i ) => <li key={i}> Sale #{sale.id} on {sale.sale_date}</li>)}
 </ul>
 </div>
     )
