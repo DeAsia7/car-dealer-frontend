@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DeAsia7/car-dealer-frontend#readme",
   "description": "",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.5.0",
     "bootstrap": "^5.3.6",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
