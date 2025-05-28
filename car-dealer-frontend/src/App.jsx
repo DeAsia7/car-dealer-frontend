@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Login  from './components/login'
+import  Login   from './components/login'
 import { createApi } from './api';
 import { MostExpensiveCar } from './components/expensiveCar';
 import { SalesReport } from './components/salesReport';
-import { ClientList } from './components/client.list';
+import { ClientList } from './components/ClientList';
 import { SalesByClient } from './components/salesByClient';
 
 
@@ -15,7 +15,7 @@ function App() {
     return <Login setToken={setToken} />
 
     return (
-      <div className="space-y-8">
+      <div className="p-4">
         <MostExpensiveCar api={api} />
         <SalesReport api={api} />
         <ClientList api={api} />
