@@ -5,6 +5,7 @@ import { MostExpensiveCar } from './components/expensiveCar';
 import { SalesReport } from './components/salesReport';
 import { ClientList } from './components/ClientList';
 import { SalesByClient } from './components/salesByClient';
+import { AddCar } from './components/addCar';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <SalesReport api={api} />
         <ClientList api={api} />
         <SalesByClient api={api} />
+        <AddCar api={api} />
         
       </div>
     )
