@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Login  from './components/Login'
+import Login  from './components/login'
 import { createApi } from './api';
-import { MostExpensiveCar } from './components/MostExpensiveCar';
-import { SalesReport } from './components/SalesReport';
-import { ClientList } from './components/ClientList';
-import { SalesByClient } from './components/SalesByClient';
+import { MostExpensiveCar } from './components/expensiveCar';
+import { SalesReport } from './components/salesReport';
+import { ClientList } from './components/client.list';
+import { SalesByClient } from './components/salesByClient';
 
 
 function App() {
