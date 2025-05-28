@@ -3,7 +3,7 @@ import Login  from './components/login'
 import { createApi } from './api';
 import { MostExpensiveCar } from './components/expensiveCar';
 import { SalesReport } from './components/salesReport';
-import { ClientList } from './components/client.list';
+import { ClientsList } from './components/client.list';
 import { SalesByClient } from './components/salesByClient';
 
 
@@ -18,7 +18,7 @@ function App() {
       <div className="space-y-8">
         <MostExpensiveCar api={api} />
         <SalesReport api={api} />
-        <ClientList api={api} />
+        <ClientsList api={api} />
         <SalesByClient api={api} />
         
       </div>
