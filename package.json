@@ -4,9 +4,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeAsia7/car-dealer-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DeAsia7/car-dealer-frontend/issues"
+  },
+  "homepage": "https://github.com/DeAsia7/car-dealer-frontend#readme",
   "description": ""
 }
