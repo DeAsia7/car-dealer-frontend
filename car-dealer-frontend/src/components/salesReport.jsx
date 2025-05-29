@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-export function SalesReport({api}) {
+export default function SalesReport({api}) {
     const [sales, setSales] = useState([]);
 
     const fetchSales = () => {

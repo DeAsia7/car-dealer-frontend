@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-export function MostExpensiveCar({api}) {
+export default function MostExpensiveCar({api}) {
     const [car, setCar] = useState(null);
 
     const fetchCar = () => {

@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-export function SalesByClient({ api }) {
+export default function SalesByClient({ api }) {
     canst [id, setId] = useState('');
     const [sales, setSales] = useState([]);
 
