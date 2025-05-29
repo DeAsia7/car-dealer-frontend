@@ -5,7 +5,7 @@ import { MostExpensiveCar } from './components/expensiveCar';
 import { SalesReport } from './components/salesReport';
 import { ClientList } from './components/ClientList';
 import { SalesByClient } from './components/salesByClient';
-//import { addCar} from './components/addCar'
+import { addCar } from './components/addCar';
 
 
 function App() {
