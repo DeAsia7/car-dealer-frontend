@@ -9,7 +9,7 @@ const [password, setPassword] = useState('');
 const handleLogin = async () => {
     const credentials = btoa(`${username}:${password}`);
     try{
-        const res = await axios.post('http://localhost: 5173', {}, {
+        const res = await axios.post('http://localhost:5173', {}, {
             headers: {
                 'Authorization': `Basic ${credentials}`
             }
