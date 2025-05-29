@@ -1,6 +1,6 @@
 import { useState} from 'react';
 
-export function Clientlist({ api }) {
+export function ClientList({ api }) {
     const [clients, setClients] = useState([]);
 
     const fetchClients =  () => {

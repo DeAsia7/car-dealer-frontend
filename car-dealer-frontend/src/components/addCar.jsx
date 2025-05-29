@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function AddCar({ api }) {
+export default function addCar({ api }) {
     const [form, setForm] = useState({
         make: "",
         model: "",
