@@ -22,9 +22,9 @@ const handleLogin = async () => {
     }
 }
 return (
-    <div className= "p-4 max-w-sm mx-auto">
-    <div className="p-4 max-w-sm mx-auto" placeholder= "Enter your username" onChange={(e) => setUsername(e.target.value)}></div>
-    <div className="input" placeholder= "Enter your password" onChange={(e) => setPassword(e.target.value)}></div>
+    <div className= "">
+    <div className="input" placeholder= "Enter your username" onChange={(e) => setUsername(e.target.value)}>username</div>
+    <div className="input" placeholder= "Enter your password" onChange={(e) => setPassword(e.target.value)}>password</div>
     <button className="btn" onClick={handleLogin}>Login</button>
     </div>
 )
