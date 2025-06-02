@@ -22,9 +22,9 @@ const handleLogin = async () => {
     }
 }
 return (
-    <div className= "">
-    <div className="input" placeholder= "Enter your username" onChange={(e) => setUsername(e.target.value)}>username</div>
-    <div className="input" placeholder= "Enter your password" onChange={(e) => setPassword(e.target.value)}>password</div>
+    <div className= "min-h-screen bg-indigo-100 flex flex-col justify-center items-center px-4 rounded">
+    <div className="p-2 border border-gray-300 rounded mb-4" type="text" placeholder= "Enter your username" onChange={(e) => setUsername(e.target.value)}>username</div>
+    <div className="p-2 border border-gray-300 rounded mb-4" placeholder= "Enter your password" onChange={(e) => setPassword(e.target.value)}>password</div>
     <button className="btn" onClick={handleLogin}>Login</button>
     </div>
 )
