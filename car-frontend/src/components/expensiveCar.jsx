@@ -9,7 +9,7 @@ export default function MostExpensiveCar({api}) {
 
     return (
         <div className="p-4"> 
-        <button className="btn" onClick={fetchcar}> Get most expensive car</button>
+        <button className="btn" onClick={fetchCar}> Get most expensive car</button>
         {car && <p> {car.make} {car.model} - ${car.price}</p>}
     
         </div>
