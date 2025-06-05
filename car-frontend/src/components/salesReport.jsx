@@ -12,18 +12,10 @@ export default function SalesReport({api}) {
             <button className='btn' onClick={fetchSales}>Get Sales Report</button>
             <ul>
                 {sales.map((sale, i) => {
-                    <li key={i}>{sale.client_name} bought a {sales.color} {sale.make} {cars.model} opn {sale.date_of_sale} for {sale.price}</li>
+                    <li key={i}>{sale.client_name} bought a {sales.color} {sale.make} {sale.model} on {sale.date_of_sale} for ${sale.price}</li>
                 }
             )}
             
-            /*  client_name: sql `CONCAT(${clients.first_name}, ' ', ${clients.last_name})`,
-        make: cars.make,
-        model: cars.model,
-        price: cars.price,
-        year: cars.year,
-        color: cars.color,
-        date_of_sale: sales.sale_date,
-        */
             </ul>
 
         </div>
