@@ -1,7 +1,7 @@
 import { useState} from 'react';
 
 export default function SalesByClient({ api }) {
-    canst [id, setId] = useState('');
+    const [id, setId] = useState('');
     const [sales, setSales] = useState([]);
 
     const fetchSales = () => {
