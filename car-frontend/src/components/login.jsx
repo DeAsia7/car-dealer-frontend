@@ -15,7 +15,7 @@ const handleLogin = async () => {
             }
             
         });
-        setToken(res);
+        setToken(res.data.token);
        
     } catch (err) {
         alert('Login failed');
