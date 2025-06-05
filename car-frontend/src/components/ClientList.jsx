@@ -12,7 +12,7 @@ return(
             <button className="btn" onClick={fetchClients}>Fetch Clients</button>
             <ul>
                 {clients.map(client => 
-                    <li key={client.id}>{client.first_name} {client.last_name}</li>
+                    <li key={client.id}>{client.first_name} {client.last_name} - {client.age} - {client.is_premium == 0 ? 'Regular Client' : 'Premium Client'}</li>
                 )}
             </ul>
         </div>
