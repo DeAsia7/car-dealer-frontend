@@ -9,7 +9,7 @@ const [password, setPassword] = useState('');
 const handleLogin = async () => {
     const credentials = btoa(`${username}:${password}`);
     try{
-        const res = await axios.post('http://localhost:3000', {}, {
+        const res = await axios.post('http://localhost:3000/login', {}, {
             headers: {
                 'Authorization': `Basic ${credentials}`
             }
@@ -22,9 +22,9 @@ const handleLogin = async () => {
     }
 }
 return (
-    <div className= "min-h-screen bg-indigo-100 flex flex-col justify-center items-center px-4 rounded">
-    <div className="p-2 border border-gray-300 rounded mb-4" type="text" placeholder= "Enter your username" onChange={(e) => setUsername(e.target.value)}>username</div>
-    <div className="p-2 border border-gray-300 rounded mb-4" placeholder= "Enter your password" onChange={(e) => setPassword(e.target.value)}>password</div>
+<div className="p-4 max-w-sm mx-auto">
+    <input clasName="input" placeholder= "Enter username" onChange={(e) => setUsername(e.target.value)} />
+    <input className="input" type="password" placeholder="Enter password" onChange={(e) => setPassword(e.target.value)} />
     <button className="btn" onClick={handleLogin}>Login</button>
     </div>
 )
