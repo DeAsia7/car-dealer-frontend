@@ -19,8 +19,8 @@ import { useState } from "react";
         const handleSubmit = async () => {
             const formatted = {
                 ...form,
-                year: number(form.year),
-                price: number(form.price),
+                year: Number(form.year),
+                price: Number(form.price),
             };
 
             try{
