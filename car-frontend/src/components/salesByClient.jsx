@@ -5,7 +5,7 @@ export default function SalesByClient({ api }) {
     const [sales, setSales] = useState([]);
 
     const fetchSales = () => {
-api.get(`/sales/clients/${id}`).then(res => setSales(res.data));
+api.get(`/sales/${id}`).then(res => setSales(res.data));
     }
 
     return(

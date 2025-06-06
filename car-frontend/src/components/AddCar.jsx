@@ -1,14 +1,7 @@
 import { useState } from "react";
 
  export default function  AddCar({ api }) {
-    return(
-        <div className="p-4 max-w-sm mx-auto bg-white rounded-lg shadow-md">
-            <h1 className="text-xl font-bold mb-4">Add a new car</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-         
-        </div>
-
-)}
+  
     const [form, setForm] = useState({
         make: "",
         model: "",
