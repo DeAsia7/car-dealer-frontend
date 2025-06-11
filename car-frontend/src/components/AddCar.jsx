@@ -15,6 +15,7 @@ import { useState } from "react";
             ...form,
             [e.target.name]: e.target.value,
         });
+    };
 
         const handleSubmit = async () => {
             const formatted = {
@@ -82,5 +83,5 @@ import { useState } from "react";
             </div>
         );
     }
-}
+
 
